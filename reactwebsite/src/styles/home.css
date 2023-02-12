@@ -1,6 +1,7 @@
-body{
-    /* background-image: url(../components/assets/RJC.png); */
-    background-color: aquamarine;
+.home{
+    /* background-image: url(../assets/RJC.png); */
+  
+    /* height:1500px; */
 }
 footer{
     display: block;
@@ -9,4 +10,16 @@ footer{
     left:0;
     bottom:0;
     right:0;
+    background-color: pink;
+}
+
+.cardContainer{
+    /* width:30%; */
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 79%;
+    
+    
+    
+    
 }
