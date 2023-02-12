@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgba(85, 85, 85, 0.536);
+  background-color: rgb(43, 162, 226);
 
   height: 1440px;
 } 
@@ -45,12 +45,25 @@
 }
 .blog > h3 {
   margin-bottom: 1rem;
+  font-size: 250%;
+font-family: "Times New Roman", Times, serif;
+font-style: oblique;
+font-weight: 900;
+}
+.blog > p{
+  height:150px;
+  font-weight: 500;
+
 }
 .blog * {
-  width: 63%;
-  margin-left: 16%;
+  width: 60%;
+  /* margin-left: 18%; */
+  margin: auto;
+  /* border: 3px solid green; */
+  
   /* align-content: center; */
 }
+
 .playBackBtn {
   display: inline;
   padding: 0.5rem 2rem;
@@ -62,3 +75,4 @@
   font-size: 1rem;
   font-weight: 600;
 } 
+

@@ -1,0 +1,24 @@
+div.firstPage{
+    background-color: rgb(83, 12, 138);
+    display: block;
+    
+}
+div.firstPage > h1{
+    background-color: rgb(83, 12, 138);
+    display: block;
+    font-size: 550%;
+     font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    font-weight: 900;
+    color: white;
+    height: 1400px
+}
+
+footer{
+    display: block;
+    text-align: center;
+    position: fixed;
+    left:0;
+    bottom:0;
+    right:0;
+}

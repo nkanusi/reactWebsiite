@@ -1,19 +1,15 @@
-import '../styles/home.css';
+import '../styles/resourcePage.css';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import {Link} from 'react-router-dom';
 
-
-
-
-function Home({ data }) {
-    return (
-      <div className="home">
-          <Navbar bg="info" expand="lg">
+function ResourcePage(){
+    return(
+                <div>   
+                    <Navbar bg="info" expand="lg">
                     <Container fluid>
                       <Navbar.Brand href="/">RJC's Home</Navbar.Brand>
                       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -49,46 +45,11 @@ function Home({ data }) {
                       </Navbar.Collapse>
                     </Container>
                   </Navbar>
-         
-              <div className="homeWelcome">Welcome</div>
-
-          {/* <h1>Home Page</h1> */}
-
-
-          <div className="cardContainer">
-              <img className= "imgCustom" src={require("../assets/NiceView.jpeg" )}  style={{width: '100%'}}/>
-             
-          </div>
-
-                <div className="cardContainer2">
-                    <div className="cards">
-                    {data.posts.map((post) => (
-                        <div className="card" key={post.id}>
-                        <div className="img-wrapper">
-                            <img
-                            src={`https://ytimg.googleusercontent.com/vi/${
-                                post.url.split('v=')[1]
-                            }/sddefault.jpg`}
-                            alt={post.title}
-                            ></img>
-                        </div>
-                        <div>
-                            <h3>{post.title}</h3>
-                            <p>{post.content.slice(0, 100) + '...'}</p>
-                            <Link to={`/blogpost/${post.id}`} className="btn btn-info">Click to Explore..</Link>
-                        </div>
-                        </div>
-                    ))}
-                    </div>
-
-                </div>
-     
-
-
+                {/* <h1>firstpage things</h1> */}
+                <div  className='firstPage'> <h1>Page Under Construction!!</h1></div>
                 <footer ><h3>&copy; Copyright 2023 RJC Production</h3></footer>
-      </div>
+                </div>
     );
-  }
-  
-  export default Home;
-  
+}
+
+export default ResourcePage;
