@@ -1,0 +1,13 @@
+.secondPage{
+  background-color: rgba(129, 255, 127, 0.415);
+
+}
+
+footer{
+    display: block;
+    text-align: center;
+    position: fixed;
+    left:0;
+    bottom:0;
+    right:0;
+}
