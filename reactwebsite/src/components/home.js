@@ -7,10 +7,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {Link} from 'react-router-dom';
 
+
+
 function Home({ data }) {
     return (
       <div className="home">
-           <Navbar bg="primary" expand="lg">
+           <Navbar bg="light" expand="lg">
               <Container fluid>
                 <Navbar.Brand href="/">Amarachukwu's Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -38,7 +40,7 @@ function Home({ data }) {
                   <Form className="d-flex">
                     <Form.Control
                       type="search"
-                      placeholder="Search"
+                      placeholder="RJC Search Portal"
                       className="me-2"
                       aria-label="Search"
                     />
@@ -51,7 +53,12 @@ function Home({ data }) {
           {/* <h1>Home Page</h1> */}
 
 
-                <div className="cardContainer">
+          <div className="cardContainer">
+              <img className= "imgCustom" src={require("../assets/NiceView.jpeg" )}  style={{width: '100%'}}/>
+             
+          </div>
+
+                <div className="cardContainer2">
                     <div className="cards">
                     {data.posts.map((post) => (
                         <div className="card" key={post.id}>
@@ -66,7 +73,7 @@ function Home({ data }) {
                         <div>
                             <h3>{post.title}</h3>
                             <p>{post.content.slice(0, 100) + '...'}</p>
-                            <Link to={`/blogpost/${post.id}`}>Learn more...</Link>
+                            <Link to={`/blogpost/${post.id}`} className="btn btn-info">Click to Explore..</Link>
                         </div>
                         </div>
                     ))}
@@ -74,6 +81,8 @@ function Home({ data }) {
 
                 </div>
      
+
+
                 <footer ><h3>&copy; Copyright 2023 RJC Production</h3></footer>
       </div>
     );

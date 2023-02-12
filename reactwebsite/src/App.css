@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: #555;
-  /* background-image: url(../src/assets/RJC.png); */
+  background-color: rgba(85, 85, 85, 0.536);
+
   height: 1440px;
 } 
 

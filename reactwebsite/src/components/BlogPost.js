@@ -30,7 +30,6 @@ import React, { useState } from 'react';
                       opts={
                         {
                         playerVars: {
-                          // playlist: '00AkMN9IAAY,4oCVDkb_EIs,7fPXI_MnBOY'
                           playlist: 'Jkqo73EygmI,DaTNswJD2Ts,F1xFa6hV-Oc,B1jNI-Lej-w,EzcR9LVmzm8'
                       
                         },

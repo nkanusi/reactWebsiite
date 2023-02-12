@@ -1,8 +1,4 @@
-.home{
-    /* background-image: url(../assets/RJC.png); */
-  
-    /* height:1500px; */
-}
+
 footer{
     display: block;
     text-align: center;
@@ -13,13 +9,25 @@ footer{
     background-color: pink;
 }
 
-.cardContainer{
-    /* width:30%; */
+.cardContainer2{
+   
     margin: auto;
-    padding-top: 1%;
-    padding-left: 79%;
-    
-    
-    
-    
+    padding-top: 2%;
+    padding-left: 76%;
+}
+.cardContainer{
+  float:left;
+  /* height:1150px; */
+  width:72%;
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color: blue;
+    /* margin: auto; */
+    /* padding-top: 10%; */
+    /* padding-left: 76%; */
+}
+
+.imgCustom{
+    margin-top:0px;
+    padding-top: 0px;
 }
